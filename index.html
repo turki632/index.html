@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Birthday Card</title>
-    <!-- Google Font-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- عنصر الصوت -->
-    <audio controls>
-      <source src="birthday_song.mp3" type="audio/mpeg"  />
-      Your browser does not support the audio element.
-    </audio>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <h1>Portfolio</h1>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
 
-    <div class="card">
-      <div class="outside">
-        <div class="front">
-          <p>Happy Birthday</p>
-          <div class="cake">
-            <div class="top-layer"></div>
-            <div class="middle-layer"></div>
-            <div class="bottom-layer"></div>
-            <div class="candle"></div>
-          </div>
+    
+    <header class="hero">
+        <h1>Hello, I'm <span>Turki alshanbari</span></h1>
+        <p>A passionate Front-end Developer</p>
+        <a href="#projects" class="btn">View My Projects</a>
+    </header>
+
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            
+I am a passionate Front-end Developer with a focus on creating user-friendly and visually appealing web interfaces. Skilled in HTML and CSS, I enjoy crafting responsive designs that offer seamless user experiences.
+        </p>
+    </section>
+
+    
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="project-item">
+                <h3>Project 1</h3>
+                <a href="https://example.com" target="_blank">View Project</a>
+            </div>
+            <div class="project-item">
+                <h3>Project 2</h3>
+                <a href="https://example.com" target="_blank">View Project</a>
+            </div>
+            <div class="project-item">
+                <h3>Project 3</h3>
+                <a href="https://example.com" target="_blank">View Project</a>
+            </div>
         </div>
-        <div class="back"></div>
-      </div>
-      <div class="inside">
-        <p>اليوم مو يوم عادي اليوم يومك انتي الإنسانة اللي وجودها يلون الدنيا ويخليها أحلى, كل سنة وانتي أقرب لأحلامك وأبعد عن كل شي يزعجك ما أتمنى لك إلا سعادة تملي قلبك وابتسامة ما تفارق وجهك. كل عام وانتي بخير يا مريم </p>
-        <h1>&#127873;</h1>
-      </div>
-    </div>
-
-    <!-- JavaScript لتشغيل الصوت -->
-    <script>
-      window.addEventListener("click", () => {
-        document.getElementById("song").play();
-      });
-    </script>
-  </body>
+    </section>
+</body>
 </html>
